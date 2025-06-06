@@ -107,7 +107,7 @@ class Enemy(pygame.sprite.Sprite):
         # rec 크기 축소(충돌 판정 이미지에 맞추기 위함)
         self.rect = self.rect.inflate(-20, -30)
         # 이미지 시작 위치 설정
-        self.rect.center = (random.randint(40, 1000), 0)
+        self.rect.center = (random.randint(86, 842), 0)
 
     # 적의 움직임 설정 함수+ 플레이어 점수 측정
     def move(self):
@@ -118,7 +118,7 @@ class Enemy(pygame.sprite.Sprite):
         if self.rect.bottom > 803:
             score += 1
             self.rect.top = 0
-            self.rect.center = (random.randint(30, 610), 0)
+            self.rect.center = (random.randint(86, 842), 0)
         return self.rect.center
 
 # 시작(intro) 화면
